@@ -1,0 +1,17 @@
+//Initial resets
+*, *::before, *::after {
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+//Colors 
+$primary-color:#1a725cf1;
+$secondary-color:#ffeb79;
+$course-title: #ddbc00;
+
+//Font family
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}

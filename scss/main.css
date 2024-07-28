@@ -1,0 +1,243 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.frontal-section {
+  background-image: url("../images/main-pic.jpg");
+  height: 76vh;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  padding: 10em 0 0 5em;
+  border-bottom: 1.5rem solid #ffeb79;
+}
+
+.logo {
+  width: 17rem;
+}
+
+.courses {
+  padding: 4em 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.courses-heading {
+  width: 62%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2em;
+  padding-bottom: 5em;
+}
+
+.welcome-title {
+  font-size: 2rem;
+  color: #fff;
+  background-color: rgba(26, 114, 92, 0.9450980392);
+  width: 23rem;
+  padding: 0.3em 0em;
+  border-radius: 5px;
+}
+
+.academy-details {
+  font-size: 1.7rem;
+  color: rgba(26, 114, 92, 0.9450980392);
+}
+.academy-details strong {
+  font-size: 1.75rem;
+  font-font-weight: 600;
+}
+
+.section-title {
+  font-size: 2.1rem;
+  background-color: rgba(26, 114, 92, 0.9450980392);
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #fff;
+  padding: 0.1em 0.6em;
+  margin-bottom: 2rem;
+  border-radius: 3px;
+}
+
+.available-courses {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.course {
+  display: flex;
+  gap: 8rem;
+}
+
+.img-container img {
+  width: 13rem;
+  height: 8.5rem;
+  border-radius: 8px;
+}
+
+.course-title {
+  font-size: 1.7rem;
+  color: #ddbc00;
+  margin: 0 0 0.6rem -1.3rem;
+}
+
+.program-content li, .features-details li {
+  font-size: 1.5rem;
+  color: rgba(26, 114, 92, 0.9450980392);
+  font-weight: 600;
+}
+
+.features {
+  display: grid;
+  padding: 4em 10em;
+}
+
+.features-details {
+  display: grid;
+  row-gap: 3rem;
+}
+
+.discount {
+  margin-top: 4rem;
+  font-size: 2rem;
+  color: rgba(26, 114, 92, 0.9450980392);
+  background-color: #ffeb79;
+  text-align: center;
+  padding: 0.3em 0;
+  border-radius: 5px;
+}
+
+.booking {
+  justify-self: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  margin-top: 4rem;
+  background-color: rgba(26, 114, 92, 0.9450980392);
+  color: #ffeb79;
+  padding: 0.4em 1.5em;
+  border-radius: 30px;
+  box-shadow: 0px 4px 4px 1px #b6b6b6;
+  transition: 0.3s linear;
+}
+.booking:hover {
+  translate: 0 -4px;
+  box-shadow: 0px 13px 4px -7px #b6b6b6;
+  color: rgba(26, 114, 92, 0.9450980392);
+  background-color: #ffeb79;
+}
+
+footer {
+  background-color: rgba(26, 114, 92, 0.9450980392);
+  padding: 0.5em 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-footer img {
+  width: 6rem;
+}
+
+.social-media-links {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.icon {
+  font-size: 2.2rem;
+  color: #ffeb79;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+.icon span {
+  font-size: 0.9rem;
+}
+
+@media (max-width: 60rem) {
+  :root {
+    font-size: 13px;
+  }
+  .frontal-section {
+    background-position: top center;
+    padding: 3em 0 13em 2em;
+    height: -moz-fit-content;
+    height: fit-content;
+    border-bottom-width: 1.2rem;
+  }
+  .frontal-section .logo {
+    width: 30%;
+  }
+  .courses {
+    padding: 4em 2em;
+  }
+  .course {
+    gap: 6rem;
+  }
+  .img-container img {
+    display: block;
+    margin: 0 auto;
+  }
+  .features {
+    padding: 4em 3em;
+  }
+}
+@media (max-width: 44rem) {
+  :root {
+    font-size: 11px;
+  }
+  .courses-heading {
+    width: 100%;
+  }
+  .course {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .section-title {
+    margin: 0 auto 2rem auto;
+  }
+  .img-container img {
+    width: 28rem;
+    height: 16rem;
+  }
+  .course-title {
+    text-align: center;
+  }
+  .program-content, .features-details {
+    padding: 0 2.5em;
+  }
+  .features {
+    padding: 1em 2em;
+  }
+  .features-details {
+    gap: 2rem;
+  }
+  footer {
+    padding: 0.5em 1em;
+  }
+  .logo-footer img {
+    width: 4.5rem;
+  }
+  .social-media-links {
+    gap: 0.8rem;
+  }
+  .icon {
+    font-size: 1.9rem;
+  }
+  .icon span {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=main.css.map */

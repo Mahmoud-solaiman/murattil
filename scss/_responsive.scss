@@ -1,0 +1,97 @@
+@media (max-width:60rem) {
+    :root {
+        font-size:13px;
+    }
+    .frontal-section {
+        background-position:top center;
+        padding:3em 0 13em 2em;
+        height:fit-content;
+        border-bottom-width:1.2rem;
+
+        & .logo {
+            width:30%;
+        }
+    }
+
+    .courses {
+        padding:4em 2em;
+    }
+
+    .course {
+        gap:6rem;
+    }
+
+    .img-container {
+        & img {
+            display:block;
+            margin:0 auto;
+        }
+    }
+
+    .features {
+        padding:4em 3em;
+    }
+}
+
+@media (max-width:44rem) {
+    :root {
+        font-size:11px;
+    }
+
+    .courses-heading {
+        width:100%;
+    }
+
+    .course {
+        flex-direction: column;
+        gap:2rem;
+    }
+
+    .section-title {
+        margin:0 auto 2rem auto;
+    }
+
+    .img-container {
+        & img {
+            width:28rem;
+            height:16rem;
+        }
+    }
+
+    .course-title {
+        text-align: center;
+    }
+
+    .program-content {
+        padding:0 2.5em;
+    }
+
+    .features {
+        padding:1em 2em;
+    }
+
+    .features-details {
+        gap:2rem;
+    }
+
+    footer {
+        padding:.5em 1em;
+    }
+
+    .logo-footer {
+        & img {
+            width:4.5rem;
+        }
+    }
+
+    .social-media-links {
+        gap:.8rem;
+    }
+
+    .icon {
+        font-size:1.9rem;
+        & span {
+            font-size:.7rem;
+        }
+    }
+}

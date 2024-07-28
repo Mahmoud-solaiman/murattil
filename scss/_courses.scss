@@ -1,0 +1,80 @@
+.courses {
+    padding:4em 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.courses-heading {
+    width:62%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap:2em;
+    padding-bottom:5em;
+}
+
+.welcome-title {
+    font-size:2rem;
+    color:#fff;
+    background-color:$primary-color;
+    width: 23rem;
+    padding:.3em 0em;
+    border-radius:5px;
+}
+
+.academy-details {
+    font-size:1.7rem;
+    color:$primary-color;
+
+    & strong {
+        font: {
+            size:1.75rem;
+            font-weight:600;
+        }
+    }
+}
+
+.section-title {
+    font-size:2.1rem;
+    background-color: $primary-color;
+    width:fit-content;
+    color:#fff;
+    padding:.1em .6em;
+    margin-bottom:2rem;
+    border-radius:3px;
+}
+
+.available-courses {
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.course {
+    display:flex;
+    gap:8rem;
+}
+
+.img-container {
+    & img {
+        width:13rem;
+        height:8.5rem;
+        border-radius:8px;
+    }
+}
+
+.course-title {
+    font-size:1.7rem;
+    color:$course-title;
+    margin:0 0 .6rem -1.3rem;
+}
+
+.program-content {
+    & li {
+        font-size:1.5rem;
+        color:$primary-color;
+        font-weight:600;
+    }
+}
