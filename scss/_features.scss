@@ -19,21 +19,21 @@
     border-radius:5px;
 }
 
-.booking {
-    justify-self: center;
-    text-decoration: none;
-    font-size:1.5rem;
-    margin-top:4rem;
-    background-color:$primary-color;
-    color:$secondary-color;
-    padding:.4em 1.5em;
-    border-radius:30px;
-    box-shadow:0px 4px 4px 1px #b6b6b6;
-    transition: .3s linear;
-    &:hover {
-        translate: 0 -4px;
-        box-shadow:0px 13px 4px -7px #b6b6b6;
-        color:$primary-color;
-        background-color: $secondary-color;
-    }
-}
+// .booking {
+//     justify-self: center;
+//     text-decoration: none;
+//     font-size:1.5rem;
+//     margin-top:4rem;
+//     background-color:$primary-color;
+//     color:$secondary-color;
+//     padding:.4em 1.5em;
+//     border-radius:30px;
+//     box-shadow:0px 4px 4px 1px #b6b6b6;
+//     transition: .3s linear;
+//     &:hover {
+//         translate: 0 -4px;
+//         box-shadow:0px 13px 4px -7px #b6b6b6;
+//         color:$primary-color;
+//         background-color: $secondary-color;
+//     }
+// }

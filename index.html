@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MURATTIL</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -118,10 +119,25 @@
         <h3 class="discount">
             <strong>Get your free trial now, and get up to 50% OFF all plans!</strong>
         </h3>
-        <a href="https://wa.me/+201284806788" target="_blank" class="booking">
+        <!-- <a href="https://wa.me/+201284806788" target="_blank" class="booking">
             BOOK NOW!
-        </a>
+        </a> -->
+        
      </section>
+     <form class="contact">
+        <input type="text" name="applicant-name" placeholder="Your name" id="name" required autocomplete="on">
+        <input type="email" name="email" placeholder="Your email" id="email" required autocomplete="on">
+        <input type="tel" name="phone-number" placeholder="WhatsApp number" id="number" required autocomplete="on">
+        <input type="text" name="country" placeholder="Your country" id="country" required autocomplete="on">
+        <div class="gender-options">
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male" class="gender-label">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female" class="gender-label">Female</label>
+        </div>
+        <textarea name="message" id="message" placeholder="Drop a message"></textarea>
+        <button type="submit" class="submit-btn">Send</button>
+    </form>
      <!-- The footer "social media links" -->
       <footer>
         <div class="logo-footer">

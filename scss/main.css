@@ -118,25 +118,6 @@ body {
   border-radius: 5px;
 }
 
-.booking {
-  justify-self: center;
-  text-decoration: none;
-  font-size: 1.5rem;
-  margin-top: 4rem;
-  background-color: rgba(26, 114, 92, 0.9450980392);
-  color: #ffeb79;
-  padding: 0.4em 1.5em;
-  border-radius: 30px;
-  box-shadow: 0px 4px 4px 1px #b6b6b6;
-  transition: 0.3s linear;
-}
-.booking:hover {
-  translate: 0 -4px;
-  box-shadow: 0px 13px 4px -7px #b6b6b6;
-  color: rgba(26, 114, 92, 0.9450980392);
-  background-color: #ffeb79;
-}
-
 footer {
   background-color: rgba(26, 114, 92, 0.9450980392);
   padding: 0.5em 4em;
@@ -167,6 +148,73 @@ footer {
   font-size: 0.9rem;
 }
 
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 0 2em 0;
+}
+.contact input, .contact textarea {
+  width: 45%;
+  padding: 0.9em 0.5em;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(26, 114, 92, 0.9450980392);
+}
+.contact input:focus, .contact textarea:focus {
+  background-color: #ddbc00;
+}
+.contact input::-moz-placeholder, .contact textarea::-moz-placeholder {
+  color: #fff;
+}
+.contact input::placeholder, .contact textarea::placeholder {
+  color: #fff;
+}
+.contact textarea {
+  resize: none;
+  height: 15rem;
+}
+
+.gender-options {
+  width: 35%;
+  text-align: start;
+}
+
+#male, #female {
+  padding: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.gender-label {
+  color: #ddbc00;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn {
+  font-size: 1.2rem;
+  padding: 0.4em 2em;
+  background-color: steelblue;
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 1px #b6b6b6;
+  transition: 0.3s linear;
+}
+.submit-btn:hover {
+  translate: 0 -4px;
+  box-shadow: 0px 13px 4px -7px #b6b6b6;
+  color: rgba(26, 114, 92, 0.9450980392);
+  background-color: #ffeb79;
+}
+
 @media (max-width: 60rem) {
   :root {
     font-size: 13px;
@@ -193,6 +241,9 @@ footer {
   }
   .features {
     padding: 4em 3em;
+  }
+  .contact input, .contact textarea {
+    width: 60%;
   }
 }
 @media (max-width: 44rem) {
@@ -239,5 +290,12 @@ footer {
   }
   .icon span {
     font-size: 0.7rem;
+  }
+  .contact input, .contact textarea {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+  .contact input {
+    padding: 1.1em 0.5em;
   }
 }/*# sourceMappingURL=main.css.map */

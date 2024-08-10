@@ -31,6 +31,12 @@
     .features {
         padding:4em 3em;
     }
+
+    .contact {
+        & input, & textarea {
+            width:60%;
+        }
+    }
 }
 
 @media (max-width:44rem) {
@@ -92,6 +98,17 @@
         font-size:1.9rem;
         & span {
             font-size:.7rem;
+        }
+    }
+
+    .contact {
+        & input, & textarea {
+            width:90%;
+            font-size:1.2rem;
+        }
+
+        & input {
+            padding:1.1em .5em;
         }
     }
 }
