@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,20 @@
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <!-- First frontal section -->
     <section class="frontal-section">
         <img class="logo" src="./images/logo.png" alt="The academy's logo">
     </section>
     <!-- Main section "Courses" -->
-     <main class="courses" id="courses">
+    <main class="courses" id="courses">
         <div class="courses-heading">
             <h1 class="welcome-title">Welcome to Murattil Quran Academy</h1>
             <!-- About the academy -->
             <p class="academy-details">
                 <strong>Murattil Quran Academy</strong>
-                is an online Arab Egyptian Academy that teaches Quran, Islamic studies, and the Arabic language for all ages and all levels. We are based in Egypt and our tutors are highly qualified Egyptian teachers. 
+                is an online Arab Egyptian Academy that teaches Quran, Islamic studies, and the Arabic language for all ages and all levels. We are based in Egypt and our tutors are highly qualified Egyptian teachers.
             </p>
         </div>
         <div>
@@ -41,8 +43,8 @@
                         </ul>
                     </div>
                 </div>
-                
-                <div class="course">    
+
+                <div class="course">
                     <div class="img-container">
                         <img src="./images/tajweed.jpg" alt="tajweed course image">
                     </div>
@@ -54,7 +56,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="course">    
+                <div class="course">
                     <div class="img-container">
                         <img src="./images/islamic-studies.jpg" alt="islamic studies course image">
                     </div>
@@ -70,7 +72,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="course">    
+                <div class="course">
                     <div class="img-container">
                         <img src="./images/arabic.jpg" alt="Arabic course image">
                     </div>
@@ -87,17 +89,17 @@
         </div>
     </main>
     <!-- Features section -->
-     <section class="features" id="features">
+    <section class="features" id="features">
         <h2 class="section-title">Murattil's Features:</h2>
         <ul class="features-details">
             <li>
-                No matter where you are around the world, 
+                No matter where you are around the world,
                 you can join us and enjoy our professional
                 and beneficial online classes.
             </li>
             <li>
-                We aim to create a professional learning 
-                environment and make the learning process 
+                We aim to create a professional learning
+                environment and make the learning process
                 interesting and enjoyable.
             </li>
             <li>
@@ -108,11 +110,11 @@
             </li>
             <li>
                 Our schedules are flexible as we deliver 24/7 classes
-                so that you can choose the times and duration of the 
+                so that you can choose the times and duration of the
                 classes that suit your personal schedule.
             </li>
             <li>
-                We grant free certificates for students who finish 
+                We grant free certificates for students who finish
                 certain levels in all programs.
             </li>
         </ul>
@@ -122,12 +124,12 @@
         <!-- <a href="https://wa.me/+201284806788" target="_blank" class="booking">
             BOOK NOW!
         </a> -->
-        
-     </section>
-     <form class="contact">
-        <input type="text" name="applicant-name" placeholder="Your name" id="name" required autocomplete="on">
+
+    </section>
+    <form class="contact" action="backend.php" method="POST">
+        <input type="text" name="name" placeholder="Your name" id="name" required autocomplete="on">
         <input type="email" name="email" placeholder="Your email" id="email" required autocomplete="on">
-        <input type="tel" name="phone-number" placeholder="WhatsApp number" id="number" required autocomplete="on">
+        <input type="tel" name="phone" placeholder="WhatsApp number" id="number" required autocomplete="on">
         <input type="text" name="country" placeholder="Your country" id="country" required autocomplete="on">
         <div class="gender-options">
             <input type="radio" name="gender" id="male" value="male" required>
@@ -138,8 +140,8 @@
         <textarea name="message" id="message" placeholder="Drop a message"></textarea>
         <button type="submit" class="submit-btn">Send</button>
     </form>
-     <!-- The footer "social media links" -->
-      <footer>
+    <!-- The footer "social media links" -->
+    <footer>
         <div class="logo-footer">
             <img src="./images/logo.png" alt="Academy logo">
         </div>
@@ -165,6 +167,7 @@
                 <span>Telegram</span>
             </a>
         </div>
-      </footer>
+    </footer>
 </body>
+
 </html>
