@@ -1,3 +1,7 @@
+<?php
+session_start();
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,6 +12,38 @@
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="scss/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .alert {
+            width: 62%;
+            padding: 1rem;
+            border-radius: 0.375rem;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .alert-success {
+            color: #155724;
+            background-color: #d4edda;
+            border-color: #c3e6cb;
+        }
+
+        .alert-error {
+            color: #721c24;
+            background-color: #f8d7da;
+            border-color: #f5c6cb;
+        }
+
+        .alert .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+            cursor: pointer;
+            font-size: 1.25rem;
+            line-height: 1;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -127,14 +163,23 @@
 
     </section>
     <form class="contact" action="backend.php" method="POST">
-        <input type="text" name="name" placeholder="Your name" id="name" required autocomplete="on">
-        <input type="email" name="email" placeholder="Your email" id="email" required autocomplete="on">
-        <input type="tel" name="phone" placeholder="WhatsApp number" id="number" required autocomplete="on">
-        <input type="text" name="country" placeholder="Your country" id="country" required autocomplete="on">
+        <?php if (isset($_SESSION['message'])) { ?>
+            <div class="alert <?php echo $_SESSION['message_type'] == 'success' ? 'alert-success' : 'alert-error'; ?>" role="alert">
+                <?php echo $_SESSION['message']; ?>
+                <span class="close" onclick="this.parentElement.style.display='none';">&times;</span>
+            </div>
+            <?php unset($_SESSION['message']); ?>
+            <?php unset($_SESSION['message_type']); ?>
+        <?php } ?>
+
+        <input type="text" name="name" placeholder="Your name" id="name"  autocomplete="on">
+        <input type="email" name="email" placeholder="Your email" id="email"  autocomplete="on">
+        <input type="tel" name="phone" placeholder="WhatsApp number" id="number"  autocomplete="on">
+        <input type="text" name="country" placeholder="Your country" id="country"  autocomplete="on">
         <div class="gender-options">
-            <input type="radio" name="gender" id="male" value="male" required>
+            <input type="radio" name="gender" id="male" value="male" >
             <label for="male" class="gender-label">Male</label>
-            <input type="radio" name="gender" id="female" value="female" required>
+            <input type="radio" name="gender" id="female" value="female" >
             <label for="female" class="gender-label">Female</label>
         </div>
         <textarea name="message" id="message" placeholder="Drop a message"></textarea>

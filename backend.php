@@ -71,8 +71,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             //Recipients
             $mail->setFrom('murattilquranacademy@gmail.com', 'New Trial');
-            $mail->addAddress('infosayed71@gmail.com', 'Sayed Khaled');     //Add a recipient
-            // $mail->addAddress('murattilquranacademy1@gmail.com', 'Mohamed Saeed');     //Add a recipient
+            $mail->addAddress('murattilquranacademy1@gmail.com', 'Mohamed Saeed');     //Add a recipient
 
 
             // Content
@@ -173,18 +172,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             ';
 
             $mail->send();
-            echo "We received your data successfully";
+            session_start();
+            $_SESSION['message'] = 'Message has been sent successfully!';
+            $_SESSION['message_type'] = 'success';
         } catch (Exception $e) {
-            echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            session_start();
+            $_SESSION['message'] = "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            $_SESSION['message_type'] = 'error';
         }
     } else {
-        
-        foreach ($errors as $error) {
-            echo "<p style='color:red;'>$error</p>";
-        }
+        session_start();
+        $_SESSION['message'] = implode('<br>', $errors);
+        $_SESSION['message_type'] = 'error';
         
     }
-    echo "<p><a href='index.php'>Go back</a></p>";
+    header('Location: index.php');
+    exit();
 } else {
     echo "<p style='color:red;'>Not Allowed</p>";
 }
